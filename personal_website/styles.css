@@ -6,10 +6,23 @@ body {
     text-align:center;
 }
 
+p{
+    font-style:oblique;
+    font-family:verdana;
+    font-size:15px;
+    
+}
+
 h1 {
     font-style:italic;
 }
 
 hr {
-    width:10%;
+    width:20%;
+}
+table{
+    border-style: double;
+    border-width: thick;
+    width: 100%;
+    text-align: center;
 }
