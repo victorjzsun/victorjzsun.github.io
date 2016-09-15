@@ -1,28 +1,25 @@
-img {
-    width:700px;
-}
-
 body {
     text-align:center;
 }
-
-p{
-    font-style:oblique;
-    font-family:verdana;
-    font-size:15px;
-    
-}
-
 h1 {
-    font-style:italic;
+    padding-top: 15px;
+    font-size: large
+}
+table {
+    width: 98%;
+    background-color: rgb(255, 170, 255);
+    border: 3px ridge;
+    border-color: rgb(255, 56, 82) rgb(54, 36, 54) rgb(112, 75, 113) rgb(255, 45, 67);
+    margin-left:auto; 
+    margin-right:auto;
 }
 
-hr {
-    width:20%;
-}
-table{
-    border-style: double;
-    border-width: thick;
-    width: 100%;
+
+td, th {
     text-align: center;
+    border: 2px solid;
+    border-color: rgb(112, 75, 113) rgb(255, 45, 67) rgb(255, 56, 82) rgb(54, 36, 54);
+}
+#po1{
+    text-align: left;
 }
