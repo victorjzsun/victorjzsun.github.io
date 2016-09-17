@@ -16,10 +16,10 @@ table {
 
 
 td, th {
-    text-align: center;
+    text-align: left;
     border: 2px solid;
     border-color: rgb(112, 75, 113) rgb(255, 45, 67) rgb(255, 56, 82) rgb(54, 36, 54);
 }
-#po1{
-    text-align: left;
+.center{
+    text-align: center;
 }
