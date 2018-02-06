@@ -1,0 +1,30 @@
+body{
+    font-size: smaller;
+}
+
+table {
+    width: 40%;
+    text-align: center
+}
+
+td{
+    
+}
+
+.one {
+	background-color: red;
+}
+.two {
+	background-color: green;
+}
+.three {
+	background-color: blue;
+	
+}
+.four {
+	background-color: yellow;
+}
+
+img{
+    border: 1px solid red;
+}
