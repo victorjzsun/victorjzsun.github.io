@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
+<html>
+
+	<head>
         <meta charset="UTF-8">
         <meta name="description" content="Different parts of a computer">
         <meta name="keywords" content="CPU, HDD, RAM, Motherboard, Network">
-        <link rel="stylesheet" href="stylesheet.css">
+        <link class = "bob" rel="stylesheet" href="stylesheet.css">
         <title>Parts of a Computer</title>
-    </head>
-    <body>
+
+	</head>
+	
+	<body>
     <h1>Parts of a Computer</h1>
     <p>Here, you can find the main parts of a computer.</p>
     <table>
@@ -48,5 +52,20 @@
             <td><img src="http://2.bp.blogspot.com/-30M7Bhe_1I4/Ud_HJ0svhPI/AAAAAAAAAbo/Z5Gu-Er-RBk/s1600/hardware_full.png" title="Input/Output" alt="Input and Output Devices" /></td>
         </tr>
     </table>
+	<div id="mainContent">
+	<p id="helloText">?</p>
+	<button id="clickButton" class="buttonStyle">click me</button>
+	<button class = "buttonStyle"><a href="my_website.html">Change Page</button>
+	</div>
+	<script> 
+	var myButton = document.getElementById("clickButton");
+	var myText = document.getElementById("helloText");
+	
+	myButton.addEventListener('click', doSomething, false)
+	
+	function doSomething() {
+		myText.textContent = "hello, world!";
+	}
+	</script>
     </body>
 </html>

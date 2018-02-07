@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
+<html>
+
+	<head>
         <meta charset="UTF-8">
         <meta name="description" content="Different parts of a computer">
         <meta name="keywords" content="CPU, HDD, RAM, Motherboard, Network">
-        <link rel="stylesheet" href="stylesheet.css">
+        <link class = "bob" rel="stylesheet" href="stylesheet.css">
         <title>Parts of a Computer</title>
-    </head>
-    <body>
+
+	</head>
+	
+	<body>
     <h1>Parts of a Computer</h1>
     <p>Here, you can find the main parts of a computer.</p>
-    <table>
+    <table id="Table">
         <tr>
             <!-- Headings for the Table -->
             <th>Name</th>
@@ -18,7 +22,7 @@
             <th>Picture</th>
         </tr>
         <tr>
-            <td><a class="red" href="http://www.webopedia.com/TERM/C/CPU.html" target="_blank">CPU</a></td>
+            <td><a class="red" class="hlink" href="http://www.webopedia.com/TERM/C/CPU.html" target="_blank">CPU</a></td>
             <td>Does all of the calculations for the computer. Without the CPU, a computer can't operate.</td>
             <td><img src="http://orig05.deviantart.net/3cf1/f/2011/043/0/4/core_i7_sandy_bridge_cpu_by_climber07-d39emb2.png" title="CPU" alt="Central Processing Unit" /></td>
         </tr>
@@ -48,5 +52,29 @@
             <td><img src="http://2.bp.blogspot.com/-30M7Bhe_1I4/Ud_HJ0svhPI/AAAAAAAAAbo/Z5Gu-Er-RBk/s1600/hardware_full.png" title="Input/Output" alt="Input and Output Devices" /></td>
         </tr>
     </table>
+	<div id="mainContent">
+	<p id="helloText">?</p>
+	<button id="clickButton" class="buttonStyle">Click me</button>
+	<button class = "buttonStyle"><a href="my_website.html">Change Page</a></button>
+	</div>
+	<script> 
+	var myButton = document.getElementById("clickButton");
+	var myText = document.getElementById("helloText");
+	var myImgs = document.getElementsByTagName("img");
+	function doThis() {
+    	for (var img = 0; img < myImgs.length; img++) {
+    	    myImgs.item(img).width = window.innerWidth/2;
+    	}
+    	return doThis();
+	}
+	doThis();
+	
+	
+	myButton.addEventListener('click', doSomething, false)
+	
+	function doSomething() {
+		myText.textContent = "hello, world!";
+	}
+	</script>
     </body>
 </html>

@@ -1,0 +1,80 @@
+#mainContent {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: xx-large;
+	font-weight: bold;
+	border-radius: 4px;
+	padding: 10px;
+	text-align: center;
+}
+.buttonStyle {
+	border-radius: 4px;
+	border: thin solid #F0E020;
+	padding: 5px;
+	background-color: #F8F094;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	color: #663300;
+	width: 75px;
+}
+
+.buttonStyle:hover {
+	border: thin solid #FFCC00;
+	background-color: #FCF9D6;
+	color: #996633;
+	cursor: pointer;
+}
+.buttonStyle:active {
+	border: thin solid #99CC00;
+	background-color: #F5FFD2;
+	color: #669900;
+	cursor: pointer;
+}
+body{
+    text-align: center;
+    background-color: #FFCC66;
+}
+
+h1{
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+p{
+    font-weight: bold
+}
+
+th{
+    border:1px solid black;
+} 
+
+td{
+    border:1px dashed black;
+}
+
+table{
+    
+    /* Centers table */
+    margin-left: auto;  
+    margin-right: auto;
+}
+
+/* unvisited link */
+a:link {
+    color: #0077FF;
+}
+
+/* visited link */
+a:visited {
+    color: #0000FF;
+}
+
+/* mouse over link - green */
+.green:hover {
+    color: #009900;
+}
+
+/* mouse over link - red */
+.red:hover {
+    color: #FF0000;
+}
