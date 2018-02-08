@@ -55,19 +55,15 @@
 	<div id="mainContent">
 	<p id="helloText">?</p>
 	<button id="clickButton" class="buttonStyle">Click me</button>
-	<button class = "buttonStyle"><a href="my_website.html">Change Page</a></button>
+	<button class = "buttonStyle"><a href="my_website.html">Refresh Page</a></button>
 	</div>
 	<script> 
 	var myButton = document.getElementById("clickButton");
 	var myText = document.getElementById("helloText");
 	var myImgs = document.getElementsByTagName("img");
-	function doThis() {
-    	for (var img = 0; img < myImgs.length; img++) {
-    	    myImgs.item(img).width = window.innerWidth/2;
-    	}
-    	return doThis();
+	for (var img = 0; img < myImgs.length; img++) {
+	    myImgs.item(img).width = window.innerWidth/2;
 	}
-	doThis();
 	
 	
 	myButton.addEventListener('click', doSomething, false)
