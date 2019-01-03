@@ -1,5 +1,6 @@
 body {
     color:#000000;
+    background-color:lightblue;
     text-align: center;
     height:auto;
     width:auto;
@@ -21,7 +22,7 @@ img {
 .menu{
     height:40px;
     width:100%;
-    padding:1px;
+    padding:0px 5px 0px 5px;
     background-color:#009900;
     color:black;
     position:fixed;
@@ -53,8 +54,9 @@ img {
 
 .menuTitle{
     width:30%;
-    height:40px;
+    height:100%;
     font-size:34px;
+    line-height:41px;
     display:inline-block;
     vertical-align:middle;
     text-align:left;
@@ -70,7 +72,7 @@ img {
 
 .menuOption{
     height:40px;
-    padding:0px 5px 0px 5px;
+    padding:0px 7px 0px 5px;
     border-right:1px solid;
     display:inline-block;
     font-size:18px;
@@ -78,10 +80,53 @@ img {
 }
 
 .headingSection {
-    height: 50%;
+    height: 100vh;
     margin: auto;
     font-size: 50px;
     text-align: center;
-    line-height:500%;
+    line-height:400px;
+    color:white;
     font-family:"Times New Roman";
+    background-image:url(resources/headerBackground.jpg);
+    transition:0.5s;
+    vertical-align:middle;
+}
+
+.intro {
+    margin-top:30px;
+    height:254px;
+    vertical-align:middle;
+    text-align:left;
+}
+
+.introBB{
+    margin:auto;
+    width:800px;
+    border:2px solid;
+}
+
+.profile {
+    display:inline-block;
+}
+
+.welcome {
+    padding:10px 0px 10px 30px;
+    height:230px;
+    line-height:27px;
+    vertical-align:middle;
+    display:inline-block;
+    text-align:left;
+}
+
+p {
+    word-wrap:break-word;
+}
+
+.currentProjects {
+    padding:20px;
+    height:200px;
+}
+
+.header {
+    font-size:30px;
 }

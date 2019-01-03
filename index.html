@@ -37,9 +37,37 @@
                 </div>
             </div>
         </div>
-        <div class="headingSection">
+        <div class="headingSection" id="scrollHeader">
             Hi there
         </div>
-        <div>Boo</div>
+        <div class="intro">
+            <div class="introBB">
+                <div class="profile">
+                    <img src="resources/profile.jpg" width=250px>
+                </div>
+                <div class="welcome">
+                    <p>Welcome to my site</p>
+                    <p>I'm a first year Computer Science student at the University of Waterloo.</p>
+                    <p>Currently looking for a co-op placement from May to August 2019</p>
+                    <p>Feel free to browse through the menu links</p>
+                    <p>If you have any questions, please contact me <a href="contact.html">here</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="currentProjects">
+            <div class="header">
+                Current Projects
+            </div>
+        </div>
+    <script>
+        window.onscroll = function() {scrollHeader(false)};
+        window.onclick = function() {scrollHeader(true)}
+        function scrollHeader(click) {
+            if (click || document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("scrollHeader").style.height = "10vh";
+                document.getElementById("scrollHeader").style.lineHeight = "100%";
+            }
+        }
+    </script>
     </body>
 </html>
