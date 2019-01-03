@@ -1,10 +1,87 @@
-h1 {
-    font-size: 50px;
+body {
+    color:#000000;
     text-align: center;
+    height:auto;
+    width:auto;
+    margin:40px 0px 0px 0px;
+    padding:0;
+    border:0;
+    position:relative;
+    font-family:"Times New Roman";
 }
 
-#section1 {
-    height: 200px;
-    width: 500px;
+div {
+    display:block;
+}
+
+img {
+    vertical-align:middle;
+}
+
+.menu{
+    height:40px;
+    width:100%;
+    padding:1px;
+    background-color:#009900;
+    color:black;
+    position:fixed;
+    top:0px;
+    left:0px;
+    vertical-align:middle;
+    display:table;
+}
+
+.menuMobile{
+    text-align:left;
+    display:none;
+}
+
+.menuMobIcon{
+    height:40px;
+    width:40px;
+    padding:0px;
+    display:inline-block;
+}
+
+.menuMobTitle{
+    width:100px;
+    height:40px;
+    font-size:34px;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.menuTitle{
+    width:30%;
+    height:40px;
+    font-size:34px;
+    display:inline-block;
+    vertical-align:middle;
+    text-align:left;
+}
+
+.menuPages{
+    display:inline-block;
+    vertical-align:middle;
+    text-align:right;
+    line-height:40px;
+    width:70%;
+}
+
+.menuOption{
+    height:40px;
+    padding:0px 5px 0px 5px;
+    border-right:1px solid;
+    display:inline-block;
+    font-size:18px;
+    vertical-align:middle;
+}
+
+.headingSection {
+    height: 50%;
     margin: auto;
+    font-size: 50px;
+    text-align: center;
+    line-height:500%;
+    font-family:"Times New Roman";
 }
