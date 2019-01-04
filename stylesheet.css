@@ -150,7 +150,6 @@ img {
 
 .welcome {
     padding:10px 0px 10px 30px;
-    height:230px;
     line-height:27px;
     vertical-align:middle;
     display:inline-block;
@@ -163,7 +162,6 @@ p {
 
 .currentProjects {
     margin-top:50px;
-    height:200px;
     text-align:center;
 }
 
@@ -181,4 +179,17 @@ td{
 
 .projectPicture{
     height:50%;
+}
+
+.contactSection{
+    background-color:black;
+    color:white;
+    height:40px;
+    width:100%;
+}
+.contactOption{
+    display:inline-block;
+    height:40px;
+    line-height:40px;
+    margin:0px 10px 0px 10px;
 }
