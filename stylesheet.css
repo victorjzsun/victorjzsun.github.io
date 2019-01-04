@@ -79,6 +79,10 @@ img {
     vertical-align:middle;
 }
 
+.menuOption:hover{
+    background-color:grey;
+}
+
 .headingSection {
     height: 100vh;
     margin: auto;
