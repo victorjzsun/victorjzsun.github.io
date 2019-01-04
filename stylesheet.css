@@ -84,11 +84,15 @@ img {
     margin: auto;
     font-size: 50px;
     text-align: center;
-    line-height:400px;
     color:white;
     font-family:"Times New Roman";
     background-image:url(resources/headerBackground.jpg);
     transition:0.5s;
+    vertical-align:middle;
+}
+
+.headingSection2{
+    display:inline-block;
     vertical-align:middle;
 }
 
