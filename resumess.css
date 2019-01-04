@@ -1,0 +1,9 @@
+iframe{
+    width:100%;
+    height:calc(100vh - 88px)
+}
+
+.noiframe{
+    line-height:100px;
+    font-size:50px;
+}

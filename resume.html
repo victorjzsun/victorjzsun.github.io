@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="resumess.css">
     </head>
     <body>
         <div class="menu">
@@ -34,8 +35,13 @@
                 </div>
             </div>
         </div>
-        <div>
-            Hi there
+        <div class="resume">
+            <!-- Uses pdf to js library from here: https://github.com/mozilla/pdf.js -->
+            <iframe src="web/viewer.html?file=..%2Fresources%2fresume.pdf">
+                <div class="noIframe">
+                    <a href="web/viewer.html?file=..%2Fresources%2fresume.pdf">Link to Resume</a>
+                </div>
+            </iframe>
         </div>
         <div class="contactSection">
             <div class="contactOption">
