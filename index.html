@@ -2,6 +2,12 @@
 <html>
     <head>
         <link rel="stylesheet" href="stylesheet.css">
+        <script>
+            window.onload = function(){
+                window.scrollTo(0,0);
+            }
+            window.onbeforeunload = function(){window.scrollTo(0,0)}
+        </script>
     </head>
     <body>
         <div class="menu">
@@ -38,8 +44,14 @@
             </div>
         </div>
         <div class="headingSection" id="scrollHeader">
-            <div class="headingSection2">
-                Hi there
+            <img src="resources/headerBackground.jpg" class="bgImage" id="headerBackground">
+            <div class="headingSection2" id="scrollHeaderMessage">
+                    Hi there
+            </div>
+        </div>
+        <div class="headingFooter" id="clickMessage">
+            <div class="headingMessage">
+                Click or scroll to learn more.
             </div>
         </div>
         <div class="intro">
@@ -60,16 +72,61 @@
             <div class="header">
                 Current Projects
             </div>
+            <a href="portfolio.html">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="resources/acctgAddon.png" class="projectPicture">
+                        </td>
+                        <td>
+                            <div class="projectInfo">
+                                Google Sheet Accounting Add-on
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </a>
+            <a href="portfolio.html">
+            <table>
+                <tr>
+                    <td>
+                        <div class="projectInfo">
+                            Deca Ranker
+                        </div>
+                    </td>
+                    <td>
+                        <img src="resources/decaRanker.png" class="projectPicture">
+                    </td>
+                </tr>
+            </table>
+            </a>
+            <a href="portfolio.html">
+            <table>
+                <tr>
+                    <td>
+                        <img src="resources/musicChannel.png" class="projectPicture">
+                    </td>
+                    <td>
+                        <div class="projectInfo">
+                            EDM Promotion Music Channel
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            </a>
         </div>
-    <script>
-        window.onscroll = function() {scrollHeader(false)};
-        window.onclick = function() {scrollHeader(true)}
-        function scrollHeader(click) {
-            if (click || document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                document.getElementById("scrollHeader").style.height = "10vh";
-                document.getElementById("scrollHeader").style.lineHeight = "100%";
+        <script>
+            window.onscroll = function() {scrollHeader(false)};
+            window.onclick = function() {scrollHeader(true)}
+            function scrollHeader(click) {
+                if (click || document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                    document.getElementById("headerBackground").style.opacity = 0;
+                    document.getElementById("scrollHeaderMessage").style.top = "50%";
+                    window.setInterval(function(){document.getElementById("headerBackground").style.display = "none";window.clearInterval(this)}, 2000)
+                    document.getElementById("clickMessage").style.display = "none";
+                    document.getElementById("scrollHeader").style.height = "10vh";
+                }
             }
-        }
-    </script>
+        </script>
     </body>
 </html>
