@@ -156,10 +156,6 @@ img {
     text-align:left;
 }
 
-p {
-    word-wrap:break-word;
-}
-
 .currentProjects {
     margin-top:50px;
     text-align:center;
@@ -189,6 +185,7 @@ td{
     height:40px;
     width:100%;
 }
+
 .contactOption{
     display:inline-block;
     height:40px;
