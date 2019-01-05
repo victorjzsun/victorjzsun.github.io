@@ -73,8 +73,9 @@ img {
 
 .menuOption{
     height:40px;
+    margin-right:0px;
+    margin-left:0px;
     padding:0px 7px 0px 5px;
-    border-right:1px solid;
     display:inline-block;
     font-size:18px;
     vertical-align:middle;
