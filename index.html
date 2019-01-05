@@ -130,6 +130,7 @@
                 if (click || document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                     document.getElementById("headerBackground").style.opacity = 0;
                     document.getElementById("scrollHeaderMessage").style.top = "50%";
+                    document.getElementById("scrollHeaderMessage").style.color = "black";
                     window.setInterval(function(){document.getElementById("headerBackground").style.display = "none";window.clearInterval(this)}, 2000)
                     document.getElementById("clickMessage").style.display = "none";
                     document.getElementById("scrollHeader").style.height = "10vh";
