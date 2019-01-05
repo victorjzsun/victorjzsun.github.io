@@ -70,48 +70,54 @@
             <div class="header">
                 Current Projects
             </div>
-            <a href="portfolio.html">
-                <table>
-                    <tr>
-                        <td>
+            <table>
+                <tr>
+                    <td>
+                        <a href="portfolio.html#gsAcctg">
                             <img src="resources/acctgAddon.png" class="projectPicture">
-                        </td>
-                        <td>
-                            <div class="projectInfo">
+                        </a>
+                    </td>
+                    <td>
+                        <div class="projectInfo">
+                            <button onclick="goToProject(this)">
                                 Google Sheet Accounting Add-on
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </a>
-            <a href="portfolio.html">
-            <table>
-                <tr>
-                    <td>
-                        <div class="projectInfo">
-                            Deca Ranker
-                        </div>
-                    </td>
-                    <td>
-                        <img src="resources/decaRanker.png" class="projectPicture">
-                    </td>
-                </tr>
-            </table>
-            </a>
-            <a href="portfolio.html">
-            <table>
-                <tr>
-                    <td>
-                        <img src="resources/musicChannel.png" class="projectPicture">
-                    </td>
-                    <td>
-                        <div class="projectInfo">
-                            EDM Promotion Music Channel
+                            </button>
                         </div>
                     </td>
                 </tr>
             </table>
-            </a>
+            <table>
+                <tr>
+                    <td>
+                        <div class="projectInfo">
+                            <button onclick="goToProject(this)" value="decaRank">
+                                Deca Ranker
+                            </button>
+                        </div>
+                    </td>
+                    <td>
+                        <a href="portfolio.html#decaRank">
+                            <img src="resources/decaRanker.png" class="projectPicture">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <a href="portfolio.html#edmYT">
+                            <img src="resources/musicChannel.png" class="projectPicture">
+                        </a>
+                    </td>
+                    <td>
+                        <div class="projectInfo">
+                            <button onclick="goToProject(this)">
+                                EDM Promotion Music Channel
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
         <div class="contactSection">
             <div class="contactOption">
@@ -135,6 +141,14 @@
                     window.setInterval(function(){document.getElementById("headerBackground").style.display = "none";window.clearInterval(this)}, 2000)
                     document.getElementById("clickMessage").style.display = "none";
                     document.getElementById("scrollHeader").style.height = "10vh";
+                }
+            }
+            function goToProject(button) {
+                var tRow = button.parentElement.parentElement.parentElement;
+                if (tRow.firstElementChild.firstElementChild.href == undefined) {
+                    window.location.assign(tRow.firstElementChild.nextElementSibling.firstElementChild.href);
+                } else {
+                    window.location.assign(tRow.firstElementChild.firstElementChild.href);
                 }
             }
         </script>
