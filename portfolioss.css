@@ -1,11 +1,13 @@
 .projects{
-    margin-top:50px;
+    margin-top:40px;
     text-align:center;
 }
 
 table{
     text-align:center;
     margin:auto;
+    padding-top:40px;
+    padding-bottom:40px;
 }
 
 th {
@@ -13,12 +15,20 @@ th {
 }
 
 .projectPicture{
-    height:50%;
-    padding:30px;
+    height:350px;
 }
 
 .projectHeading {
-    font-weight:bold;
+    font-size:20px;
+    text-decoration:underline;
+}
+
+.projectDesc {
+    text-align:left;
+}
+
+.tablePadding{
+    height:50px;
 }
 /*
 table{
@@ -26,10 +36,6 @@ table{
 }
 
 td {
-    
-}
-
-.projectDesc {
     
 }
 */
