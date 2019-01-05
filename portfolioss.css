@@ -1,0 +1,35 @@
+.projects{
+    margin-top:50px;
+    text-align:center;
+}
+
+table{
+    text-align:center;
+    margin:auto;
+}
+
+th {
+    font-size:50px;
+}
+
+.projectPicture{
+    height:50%;
+    padding:30px;
+}
+
+.projectHeading {
+    font-weight:bold;
+}
+/*
+table{
+    
+}
+
+td {
+    
+}
+
+.projectDesc {
+    
+}
+*/
