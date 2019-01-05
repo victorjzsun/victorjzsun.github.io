@@ -1,0 +1,91 @@
+table{
+    margin:auto;
+}
+
+td{
+    padding:30px;
+}
+
+.projectPicture{
+    height:50%;
+}
+
+.headingSection {
+    position:relative;
+    /*
+    background-image:url(resources/headerBackground.jpg); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    */
+    transition:2s;
+    text-align:center;
+}
+
+.bgImage{
+    transition:2s;
+    width:100%;
+}
+
+.headingSection2{
+    position:absolute;
+    top:50vh;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    font-size: 50px;
+    
+}
+
+/*
+.headingSection3{
+    display:table-cell;
+    text-align: center;
+    vertical-align:middle;
+}*/
+
+.headingFooter{
+    position:fixed;
+    bottom:50px;
+    text-align:center;
+    width:100%;
+}
+
+.headingMessage{
+    color:white;
+}
+
+.intro {
+    margin-top:30px;
+    height:254px;
+    vertical-align:middle;
+    text-align:left;
+}
+
+.introBB{
+    margin:auto;
+    width:1000px;
+    border:2px solid;
+}
+
+.profile {
+    display:inline-block;
+}
+
+.welcome {
+    padding:10px 0px 10px 30px;
+    line-height:27px;
+    vertical-align:middle;
+    display:inline-block;
+    text-align:left;
+}
+
+.currentProjects {
+    margin-top:50px;
+    text-align:center;
+}
+
+.header {
+    font-size:30px;
+}
