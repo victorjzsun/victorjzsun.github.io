@@ -1,10 +1,13 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+        <title>Victor Sun's Website</title>
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="stylesheet" href="indexss.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             window.onload = function(){
+                $(".menu").load("menu.txt");
                 window.scrollTo(0,0);
             }
             window.onbeforeunload = function(){window.scrollTo(0,0)}
@@ -12,34 +15,6 @@
     </head>
     <body>
         <div class="menu">
-            <div class = "menuMobile">
-                <div class="menuMobIcon">
-                    <img width=40px title="Menu" src="resources/menuIcon.png">
-                </div>
-                <div class="menuMobTitle">
-                    Menu
-                </div>
-            </div>
-            <div class="menuTitle">
-                Victor Sun
-            </div>
-            <div class="menuPages">
-                <div class="menuOption" id="red">
-                    <a href="index.html">Home</a>
-                </div>
-                <div class="menuOption" id="red">
-                    <a href="portfolio.html">Portfolio</a>
-                </div>
-                <div class="menuOption" id="blue">
-                    <a href="resume.html">Resume</a>
-                </div>
-                <div class="menuOption" id="light-purple">
-                    <a href="experience.html">Experience</a>
-                </div>
-                <div class="menuOption" id="blue">
-                    <a href="achievements.html">Achievements</a>
-                </div>
-            </div>
         </div>
         <div class="headingSection" id="scrollHeader">
             <img src="resources/headerBackground.jpg" class="bgImage" id="headerBackground">
@@ -132,7 +107,7 @@
         </div>
         <script>
             window.onscroll = function() {scrollHeader(false)};
-            window.onclick = function() {scrollHeader(true)}
+            window.onclick = function() {scrollHeader(true)};
             function scrollHeader(click) {
                 if (click || document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                     if(document.getElementById("headerBackground").style.display == "none") {

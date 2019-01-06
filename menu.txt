@@ -1,0 +1,25 @@
+<div class = "menuMobile">
+    <div class="menuMobIcon">
+        <img width=40px title="Menu" src="resources/menuIcon.png">
+    </div>
+    <div class="menuMobTitle">
+        Menu
+    </div>
+</div>
+<div class="menuTitle">
+    Victor Sun
+</div>
+<div class="menuPages">
+    <div class="menuOption" id="red">
+        <a href="index.html">Home</a>
+    </div>
+    <div class="menuOption" id="red">
+        <a href="portfolio.html">Portfolio</a>
+    </div>
+    <div class="menuOption" id="blue">
+        <a href="resume.html">Resume</a>
+    </div>
+    <div class="menuOption" id="light-purple">
+        <a href="experience.html">Experience</a>
+    </div>
+</div>
