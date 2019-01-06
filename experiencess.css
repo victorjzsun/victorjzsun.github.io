@@ -1,0 +1,49 @@
+.body{
+    text-align:center;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.experience{
+    margin:auto;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.bulletB {
+    padding:10px;
+    
+}
+
+.bullet{
+    width:10px;
+    height:2px;
+    background-color:black;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.experienceData{
+    width:700px;
+    text-align:center;
+}
+
+.expTitle {
+    font-size:30px;
+    text-align:left;
+}
+
+.expDate{
+    font-size:20px;
+    text-align:right;
+}
+
+.expDesc{
+    text-align:left;
+}
+
+.expLocation {
+    text-align:left;
+    color:#555555;
+    text-align:right;
+}
