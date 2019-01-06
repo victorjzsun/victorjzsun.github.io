@@ -58,7 +58,7 @@
                     <img src="resources/profile.jpg" width=250px>
                 </div>
                 <div class="welcome">
-                    <p>Welcome to my site</p>
+                    <h3>Welcome to my site</h3>
                     <p>I'm a first year Computer Science student at the University of Waterloo.</p>
                     <p>Currently looking for a co-op placement from May to August 2019</p>
                     <p>Feel free to browse through the menu links</p>
@@ -67,7 +67,7 @@
             </div>
         </div>
         <div class="currentProjects">
-            <div class="header">
+            <div class="projectsHeader">
                 Current Projects
             </div>
             <table>
@@ -135,12 +135,17 @@
             window.onclick = function() {scrollHeader(true)}
             function scrollHeader(click) {
                 if (click || document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                    document.getElementById("headerBackground").style.opacity = 0;
-                    document.getElementById("scrollHeaderMessage").style.top = "50%";
-                    document.getElementById("scrollHeaderMessage").style.color = "black";
-                    window.setInterval(function(){document.getElementById("headerBackground").style.display = "none";window.clearInterval(this)}, 2000)
-                    document.getElementById("clickMessage").style.display = "none";
-                    document.getElementById("scrollHeader").style.height = "10vh";
+                    if(document.getElementById("headerBackground").style.display == "none") {
+                        return;
+                    } else {
+                        document.getElementById("headerBackground").style.opacity = 0;
+                        document.getElementById("scrollHeaderMessage").style.top = "50%";
+                        document.getElementById("scrollHeaderMessage").style.color = "black";
+                        window.setInterval(function(){document.getElementById("headerBackground").style.display = "none";window.clearInterval(this)}, 2000)
+                        document.getElementById("clickMessage").style.display = "none";
+                        document.getElementById("scrollHeader").style.height = "10vh";
+                        window.scrollTo(0,80);
+                    }
                 }
             }
             function goToProject(button) {
