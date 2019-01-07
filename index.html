@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Victor Sun's Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="stylesheet" href="indexss.css">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -17,7 +18,7 @@
         <div class="menu">
         </div>
         <div class="headingSection" id="scrollHeader">
-            <img src="resources/headerBackground.jpg" class="bgImage" id="headerBackground">
+            <div class="bgImage" id="headerBackground"></div>
             <div class="headingSection2" id="scrollHeaderMessage">
                     Hi there
             </div>
@@ -45,53 +46,36 @@
             <div class="projectsHeader">
                 Current Projects
             </div>
-            <table>
-                <tr>
-                    <td>
-                        <a href="portfolio.html#gsAcctg">
-                            <img src="resources/acctgAddon.png" class="projectPicture">
-                        </a>
-                    </td>
-                    <td>
-                        <div class="projectInfo">
-                            <button onclick="goToProject(this)">
-                                Google Sheet Accounting Add-on
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td>
-                        <div class="projectInfo">
-                            <button onclick="goToProject(this)" value="decaRank">
-                                Deca Ranker
-                            </button>
-                        </div>
-                    </td>
-                    <td>
-                        <a href="portfolio.html#decaRank">
-                            <img src="resources/decaRanker.png" class="projectPicture">
-                        </a>
-                    </td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td>
-                        <a href="portfolio.html#edmYT">
-                            <img src="resources/musicChannel.png" class="projectPicture">
-                        </a>
-                    </td>
-                    <td>
-                        <div class="projectInfo">
-                            <button onclick="goToProject(this)">
-                                EDM Promotion Music Channel
-                            </button>
-                        </div>
-                    </td>
-                </tr>
+            <div class="project">
+                <a href="portfolio.html#gsAcctg">
+                    <img src="resources/acctgAddon.png" class="projectPicture">
+                </a>
+                <div class="projectInfo">
+                    <button onclick="goToProject(this)">
+                        Google Sheet Accounting Add-on
+                    </button>
+                </div>
+            </div>
+            <div class="project">
+                <a href="portfolio.html#decaRank">
+                    <img src="resources/decaRanker.png" class="projectPicture">
+                </a>
+                <div class="projectInfo">
+                    <button onclick="goToProject(this)">
+                        Deca Ranker
+                    </button>
+                </div>
+            </div>
+            <div class="project">
+                <a href="portfolio.html#edmYT">
+                    <img src="resources/musicChannel.png" class="projectPicture">
+                </a>
+                <div class="projectInfo">
+                    <button onclick="goToProject(this)">
+                        EDM Promotion Music Channel
+                    </button>
+                </div>
+            </div>
             </table>
         </div>
         <div class="contactSection">
@@ -124,12 +108,7 @@
                 }
             }
             function goToProject(button) {
-                var tRow = button.parentElement.parentElement.parentElement;
-                if (tRow.firstElementChild.firstElementChild.href == undefined) {
-                    window.location.assign(tRow.firstElementChild.nextElementSibling.firstElementChild.href);
-                } else {
-                    window.location.assign(tRow.firstElementChild.firstElementChild.href);
-                }
+                window.location.assign(button.parentElement.parentElement.firstElementChild.href);
             }
         </script>
     </body>

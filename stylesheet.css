@@ -35,56 +35,89 @@ img {
     z-index:2;
 }
 
-.menuMobile{
-    text-align:left;
-    display:none;
+@media only screen and (max-width: 600px) {
+    .menuMobile{
+        text-align:left;
+    }
+    
+    .menuMobIcon{
+        height:40px;
+        width:40px;
+        padding:0px;
+        display:inline-block;
+    }
+    
+    .menuMobTitle{
+        width:100px;
+        height:40px;
+        font-size:34px;
+        display:inline-block;
+        vertical-align:middle;
+    }
+    
+    .menuTitle{
+        display:none;
+    }
+    
+    .menuPages{
+        vertical-align:middle;
+        text-align:left;;
+        width:100%;
+        padding:5px;
+        display:none;
+    }
+    
+    .menuOption{
+        line-height:30px;
+        margin-right:0px;
+        margin-left:0px;
+        padding:0px 0px 0px 5px;
+        font-size:18px;
+        vertical-align:middle;
+    }
 }
 
-.menuMobIcon{
-    height:40px;
-    width:40px;
-    padding:0px;
-    display:inline-block;
-}
-
-.menuMobTitle{
-    width:100px;
-    height:40px;
-    font-size:34px;
-    display:inline-block;
-    vertical-align:middle;
-}
-
-.menuTitle{
-    width:30%;
-    height:100%;
-    font-size:34px;
-    line-height:41px;
-    display:inline-block;
-    vertical-align:middle;
-    text-align:left;
-}
-
-.menuPages{
-    display:inline-block;
-    vertical-align:middle;
-    text-align:right;
-    line-height:40px;
-    width:70%;
-}
-
-.menuOption{
-    height:40px;
-    margin-right:0px;
-    margin-left:0px;
-    padding:0px 7px 0px 5px;
-    display:inline-block;
-    font-size:18px;
-    vertical-align:middle;
-}
-
-.menuOption:hover{
-    background-color:grey;
+@media only screen and (min-width: 600px) {
+    .menuBrowser{
+        width:100%;
+        height:40px;
+        display:table;
+    }
+    
+    .menuMobile{
+        display:none;
+    }
+    .menuTitle{
+        width:30%;
+        height:100%;
+        font-size:34px;
+        line-height:41px;
+        display:inline-block;
+        vertical-align:middle;
+        text-align:left;
+    }
+    
+    .menuPages{
+        display:inline-block;
+        vertical-align:middle;
+        text-align:right;
+        line-height:40px;
+        width:70%;
+    }
+    
+    .menuOption{
+        height:40px;
+        margin-right:0px;
+        margin-left:0px;
+        padding:0px 7px 0px 5px;
+        display:inline-block;
+        font-size:18px;
+        vertical-align:middle;
+    }
+    
+    .menuOption:hover{
+        background-color:grey;
+    }
 }
 
 .contactSection{
