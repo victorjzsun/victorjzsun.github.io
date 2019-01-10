@@ -1,18 +1,18 @@
-.body{
-    text-align:center;
-    padding-top:40px;
-    padding-bottom:40px;
+.experiences{
+    margin:auto;
 }
 
 .experience{
-    margin:auto;
     padding-top:20px;
     padding-bottom:20px;
+    margin:auto;
 }
 
 .bulletB {
+    width:20px;
     padding:10px;
-    
+    display:none;
+    vertical-align:middle;
 }
 
 .bullet{
@@ -23,7 +23,53 @@
     margin-right:auto;
 }
 
-.experienceData{
+.expHeader{
+    display:inline-block;
+    width:100%;
+}
+
+@media only screen and (max-width: 730px) {
+    .expDetails{
+        display:block;
+        width:49%;
+    }
+    
+    .expDate{
+        font-size:20px;
+        text-align:left;
+    }
+    
+    .expLocation {
+        text-align:left;
+        color:#555555;
+        text-align:left;
+    }
+    
+    div:not(.fixedSize):not(.menu){
+        width:90vw;
+    }
+}
+
+@media only screen and (min-width: 730px) {
+    .expDetails{
+        display:inline-block;
+        width:49%;
+    }
+
+    .expDate{
+        font-size:20px;
+        text-align:right;
+    }
+    
+    .expLocation {
+        text-align:left;
+        color:#555555;
+        text-align:right;
+    }
+}
+
+.expData{
+    display:inline-block;
     width:700px;
     text-align:center;
 }
@@ -31,19 +77,10 @@
 .expTitle {
     font-size:30px;
     text-align:left;
-}
-
-.expDate{
-    font-size:20px;
-    text-align:right;
+    display:inline-block;
+    width:50%;
 }
 
 .expDesc{
     text-align:left;
-}
-
-.expLocation {
-    text-align:left;
-    color:#555555;
-    text-align:right;
 }
