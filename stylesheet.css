@@ -4,15 +4,23 @@ body {
     text-align: center;
     height:auto;
     width:auto;
-    margin:40px 0px 40px 0px;
+    margin-top:40px;
+    margin-bottom:40px;
+    margin-left:auto;
+    margin-right:auto;
     padding:0;
     border:0;
     position:relative;
     font-family:"Trebuchet MS";
 }
 
+a{
+    text-decoration:none;
+}
+
 div {
     display:block;
+    margin:auto;
 }
 
 img {
@@ -75,6 +83,29 @@ img {
         font-size:18px;
         vertical-align:middle;
     }
+    
+    img:not(.fixedSize) {
+        width:90vw;
+    }
+    
+    div:not(.fixedSize):not(.menu) {
+        width:90vw;
+    }
+    
+    .contactOptions{
+        display:none;
+    }
+
+    .contactOption{
+        display:block;
+        height:40px;
+        line-height:40px;
+        margin:0px 10px 0px 10px;
+    }
+    
+    .colon{
+        display:none;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -118,6 +149,31 @@ img {
     .menuOption:hover{
         background-color:grey;
     }
+
+    .contactOptions{
+        display:inline-block;
+    }
+
+    .contactOption{
+        display:inline-block;
+        height:40px;
+        line-height:40px;
+        margin:0px 10px 0px 10px;
+    }
+    
+    img{
+        width:300px;
+    }
+    
+    .colon{
+        display:inline-block;
+    }
+}
+
+.contactHeader{
+    height:40px;
+    line-height:40px;
+    display:inline-block;
 }
 
 .contactSection{
@@ -129,15 +185,8 @@ img {
     width:100%;
 }
 
-.contactOption{
-    display:inline-block;
-    height:40px;
-    line-height:40px;
-    margin:0px 10px 0px 10px;
-}
-
 .header{
     font-weight:bold;
     font-size:50px;
-    padding:10px;
+    padding-top:30px;
 }

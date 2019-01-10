@@ -8,21 +8,22 @@
         <script>
             window.onload = function(){
                 $(".menu").load("menu.txt");
+                $(".contact").load("contact.txt");
             }
         </script>
     </head>
     <body>
         <div class="menu"></div>
+        <div class="header">
+            Projects
+        </div>
         <div class="projects">
-            <div class="header">
-                Projects
-            </div>
             <div class="project">
                 <div class="sectionPadding" id="gsAcctg"></div>
                 <div class="projectHeadingMob">
                     Google Sheet Accounting Add-on
                 </div>
-                <img src="resources/acctgAddon.png" class="projectPicture">
+                <img src="resources/acctgAddon.png" alt="Accounting Add-on Picture" title="Accounting Add-on" class="projectPicture">
                 <div class="projectInfo">
                     <div class="projectHeading">
                         Google Sheet Accounting Add-on
@@ -47,7 +48,7 @@
                 <div class="projectHeadingMob">
                     DECA Competitor Ranker
                 </div>
-                <img src="resources/decaRanker.png" class="projectPicture">
+                <img src="resources/decaRanker.png" alt="DECA Ranker Picture" title="DECA Ranker" class="projectPicture">
                 <div class="projectInfo">
                     <div class="projectHeading">
                         DECA Competitor Ranker
@@ -72,7 +73,7 @@
                 <div class="projectHeadingMob">
                     EDM Promotion YouTube Channel
                 </div>
-                <img src="resources/musicChannel.png" class="projectPicture">
+                <img src="resources/musicChannel.png" alt="Music Channel Picture" title="Music Channel" class="projectPicture">
                 <div class="projectInfo">
                     <div class="projectHeading">
                         EDM Promotion YouTube Channel
@@ -96,16 +97,6 @@
                 </div>
             </div>
         </div>
-        <div class="contactSection">
-            <div class="contactOption">
-                Contact:
-            </div>
-            <div class="contactOption">
-                Email: victorjsun@gmail.com
-            </div>
-            <div class="contactOption">
-                Phone: (416) 527-7877
-            </div>
-        </div>
+        <div class="contact fixedSize"></div>
     </body>
 </html>

@@ -3,6 +3,7 @@
 }
 
 .headingSection {
+    width:100%;
     position:relative;
     /*
     background-image:url(resources/headerBackground.jpg); 
@@ -26,6 +27,8 @@
 }
 
 .headingSection2{
+    padding-top:50px;
+    padding-bottom:30px;
     position:absolute;
     top:50vh;
     left:50%;
@@ -68,8 +71,14 @@
     display:inline-block;
 }
 
+.introPadding{
+    width:20px;
+    height:20px;
+    display:inline-block;
+}
+
 .welcome {
-    padding:10px 30px 10px 30px;
+    padding-top:10px;
     line-height:27px;
     vertical-align:middle;
     display:inline-block;
@@ -84,20 +93,25 @@
 .projectsHeader {
     display:block;
     font-size:40px;
-    padding:30px;
+    padding-top:30px;
+    padding-bottom:30px;
 }
 
-.projectPicture{
-    width:400px;
+@media only screen and (min-width: 600px) {
+    .projectPicture{
+        width:400px;
+    }
 }
 
 .project{
-    padding:20px;
+    padding-top:20px;
+    padding-bottom:20px;
 }
 
 .projectInfo{
     display:inline-block;
-    padding:50px;
+    padding-top:50px;
+    padding-top:50px;
 }
 
 button{

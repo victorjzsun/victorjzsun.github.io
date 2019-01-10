@@ -9,16 +9,16 @@
         <script>
             window.onload = function(){
                 $(".menu").load("menu.txt");
+                $(".contact").load("contact.txt");
                 window.scrollTo(0,0);
             }
             window.onbeforeunload = function(){window.scrollTo(0,0)}
         </script>
     </head>
     <body>
-        <div class="menu">
-        </div>
-        <div class="headingSection" id="scrollHeader">
-            <div class="bgImage" id="headerBackground"></div>
+        <div class="menu fixedSize"></div>
+        <div class="headingSection fixedSize" id="scrollHeader">
+            <div class="bgImage fixedSize" id="headerBackground"></div>
             <div class="headingSection2" id="scrollHeaderMessage">
                     Hi there
             </div>
@@ -31,8 +31,9 @@
         <div class="intro">
             <div class="introBB">
                 <div class="profile">
-                    <img src="resources/profile.jpg" width=250px>
+                    <img src="resources/profile.jpg">
                 </div>
+                <div class="introPadding"></div>
                 <div class="welcome">
                     <h3>Welcome to my site</h3>
                     <p>I'm a first year Computer Science student at the University of Waterloo.</p>
@@ -48,8 +49,9 @@
             </div>
             <div class="project">
                 <a href="portfolio.html#gsAcctg">
-                    <img src="resources/acctgAddon.png" class="projectPicture">
+                    <img src="resources/acctgAddon.png" alt="Accounting Add-on Picture" title="Accounting Add-on" class="projectPicture">
                 </a>
+                <div class="introPadding"></div>
                 <div class="projectInfo">
                     <button onclick="goToProject(this)">
                         Google Sheet Accounting Add-on
@@ -58,37 +60,28 @@
             </div>
             <div class="project">
                 <a href="portfolio.html#decaRank">
-                    <img src="resources/decaRanker.png" class="projectPicture">
+                    <img src="resources/decaRanker.png" alt="DECA Ranker Picture" title="DECA Ranker" class="projectPicture">
                 </a>
+                <div class="introPadding"></div>
                 <div class="projectInfo">
                     <button onclick="goToProject(this)">
-                        Deca Ranker
+                        DECA Ranker
                     </button>
                 </div>
             </div>
             <div class="project">
                 <a href="portfolio.html#edmYT">
-                    <img src="resources/musicChannel.png" class="projectPicture">
+                    <img src="resources/musicChannel.png" alt="Music Channel Picture" title="Music Channel" class="projectPicture">
                 </a>
+                <div class="introPadding"></div>
                 <div class="projectInfo">
                     <button onclick="goToProject(this)">
                         EDM Promotion Music Channel
                     </button>
                 </div>
             </div>
-            </table>
         </div>
-        <div class="contactSection">
-            <div class="contactOption">
-                Contact:
-            </div>
-            <div class="contactOption">
-                Email: victorjsun@gmail.com
-            </div>
-            <div class="contactOption">
-                Phone: (416) 527-7877
-            </div>
-        </div>
+        <div class="contact fixedSize"></div>
         <script>
             window.onscroll = function() {scrollHeader(false)};
             window.onclick = function() {scrollHeader(true)};
