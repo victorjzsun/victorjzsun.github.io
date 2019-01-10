@@ -3,33 +3,25 @@
     <head>
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="stylesheet" href="resumess.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             window.onload = function(){
                 $(".menu").load("menu.txt");
+                $(".contact").load("contact.txt");
             }
         </script>
     </head>
     <body>
         <div class="menu"></div>
-        <div class="resume">
+        <div class="resume fixedSize">
             <!-- Uses pdf to js library from here: https://github.com/mozilla/pdf.js -->
             <iframe src="web/viewer.html?file=..%2Fresources%2fresume.pdf">
-                <div class="noIframe">
+                <div class="noIframe fixedSize">
                     <a href="web/viewer.html?file=..%2Fresources%2fresume.pdf">Link to Resume</a>
                 </div>
             </iframe>
         </div>
-        <div class="contactSection">
-            <div class="contactOption">
-                Contact:
-            </div>
-            <div class="contactOption">
-                Email: victorjsun@gmail.com
-            </div>
-            <div class="contactOption">
-                Phone: (416) 527-7877
-            </div>
-        </div>
+        <div class="contact fixedSize"></div>
     </body>
 </html>

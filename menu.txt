@@ -1,32 +1,32 @@
-<div class="menuMobile" onclick='(function(){
+<div class="menuMobile fixedSize" onclick='(function(){
     if($(".menuPages").css("display") == "none"){
         $(".menuPages").css("display", "block")
     } else {
         $(".menuPages").css("display", "none")
     }
 })()'>
-    <div class="menuMobIcon">
-        <img width=40px title="Menu" src="resources/menuIcon.png">
+    <div class="menuMobIcon fixedSize">
+        <img width=40px title="Menu" src="resources/menuIcon.png" class="fixedSize">
     </div>
-    <div class="menuMobTitle">
+    <div class="menuMobTitle fixedSize">
         Menu
     </div>
 </div>
-<div class="menuBrowser">
-    <div class="menuTitle">
+<div class="menuBrowser fixedSize">
+    <div class="menuTitle fixedSize">
         Victor Sun
     </div>
-    <div class="menuPages">
-        <div class="menuOption" id="red">
+    <div class="menuPages fixedSize">
+        <div class="menuOption fixedSize" id="red">
             <a href="index.html">Home</a>
         </div>
-        <div class="menuOption" id="red">
+        <div class="menuOption fixedSize" id="red">
             <a href="portfolio.html">Portfolio</a>
         </div>
-        <div class="menuOption" id="blue">
+        <div class="menuOption fixedSize" id="blue">
             <a href="resume.html">Resume</a>
         </div>
-        <div class="menuOption" id="light-purple">
+        <div class="menuOption fixedSize" id="light-purple">
             <a href="experience.html">Experience</a>
         </div>
     </div>
