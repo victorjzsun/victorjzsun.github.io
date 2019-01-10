@@ -39,7 +39,6 @@ img {
     background-color:#ffcc66;
     color:black;
     vertical-align:middle;
-    display:table;
     z-index:2;
 }
 
@@ -155,10 +154,6 @@ img {
         height:40px;
         line-height:40px;
         margin:0px 10px 0px 10px;
-    }
-    
-    img{
-        width:300px;
     }
     
     .colon{
