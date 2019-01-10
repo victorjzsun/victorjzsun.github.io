@@ -1,0 +1,23 @@
+<div class="contactSection fixedSize" onclick='(function(){
+    if($(".menuTitle").css("display") == "none") {
+        if($(".contactOptions").css("display") == "none") {
+            $(".contactOptions").css("display", "block")
+            $(".contactSection").css("height", "120px")
+        } else {
+            $(".contactOptions").css("display", "none")
+            $(".contactSection").css("height", "40px")
+        }
+    }
+})()'>
+    <div class="contactHeader fixedSize">
+        Contact<div class="colon">:</div>
+    </div>
+    <div class="contactOptions fixedSize">
+        <div class="contactOption fixedSize">
+            Email: victorjsun@gmail.com
+        </div>
+        <div class="contactOption fixedSize">
+            Phone: (416) 527-7877
+        </div>
+    </div>
+</div>
