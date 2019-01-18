@@ -67,6 +67,10 @@
     display:inline-block;
 }
 
+a{
+    text-decoration:none;
+}
+
 .introPadding{
     width:20px;
     height:20px;
