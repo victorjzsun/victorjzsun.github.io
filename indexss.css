@@ -67,7 +67,7 @@
     display:inline-block;
 }
 
-a{
+.noUnderline{
     text-decoration:none;
 }
 
