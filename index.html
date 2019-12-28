@@ -14,92 +14,96 @@
                 $(".menu").load("menu.txt");
                 $(".contact").load("contact.txt");
                 window.scrollTo(0,0);
-            }
-            window.onbeforeunload = function(){window.scrollTo(0,0)}
+            };
+            window.onbeforeunload = () => window.scrollTo(0,0);
         </script>
     </head>
     <body>
         <div class="menu fixedSize"></div>
-        <div class="headingSection fixedSize" id="scrollHeader">
-            <div class="bgImage fixedSize" id="headerBackground"></div>
-            <div class="headingSection2" id="scrollHeaderMessage">
-                    Welcome
-            </div>
-        </div>
-        <div class="headingFooter fixedSize" id="clickMessage">
-            <div class="headingMessage fixedSize">
-                Click or scroll to learn more.
-            </div>
-        </div>
-        <div class="intro">
-            <div class="autoMargin">
-                <div class="profile">
-                    <img src="resources/profile.jpg" class="profilePicture">
-                </div>
-                <div class="introPadding"></div>
-                <div class="welcome">
-                    <h3>Welcome to my site</h3>
-                    <p>I'm a second year Computer Science student at the University of Waterloo.</p>
-                    <p>Currently looking for a co-op placement from May to August 2020</p>
-                    <p>Feel free to browse through the menu links</p>
-                    <p>If you have any questions, please contact me <a href="mailto:victorjsun@gmail.com">here</a></p>
+        <div class="bodyText">
+            <div class="headingSection fixedSize" id="scrollHeader">
+                <div class="bgImage fixedSize" id="headerBackground"></div>
+                <div class="headingSection2" id="scrollHeaderMessage">
+                        Welcome
                 </div>
             </div>
-        </div>
-        <div class="currentProjects">
-            <div class="projectsHeader">
-                Current Projects
+            <div class="headingFooter fixedSize" id="clickMessage">
+                <div class="headingMessage fixedSize">
+                    Click or scroll to learn more.
+                </div>
             </div>
-            <div class="project">
-                <a href="portfolio.html#gsAcctg" class="noUnderline">
-                    <div class="projectHeading">
-                        <div class="projectHeadingText">
-                            Google Sheet Accounting Add-on
-                        </div>
+            <div class="intro">
+                <div class="autoMargin">
+                    <div class="profile">
+                        <img src="resources/profile.jpg" class="profilePicture">
                     </div>
-                    <img class="projectPicture projectInfo" src="resources/acctgAddon.png" alt="Accounting Add-on Picture" title="Accounting Add-on">
-                </a>
+                    <div class="introPadding"></div>
+                    <div class="welcome">
+                        <h3>Welcome to my site</h3>
+                        <p>I'm a second year Computer Science student at the University of Waterloo.</p>
+                        <p>Currently looking for a co-op placement from May to August 2020</p>
+                        <p>Feel free to browse through the menu links</p>
+                        <p>If you have any questions, please contact me <a href="mailto:victorjsun@gmail.com">here</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="project">
-                <a href="portfolio.html#decaRank" class="noUnderline">
-                    <div class="projectHeading">
-                        <div class="projectHeadingText">
-                            DECA Ranker
+            <div class="sectionDivider"></div>
+            <div class="currentProjects">
+                <div class="projectsHeader">
+                    Current Projects
+                </div>
+                <div class="project">
+                    <a href="portfolio.html#gsAcctg" class="noUnderline">
+                        <div class="projectHeading">
+                            <div class="projectHeadingText">
+                                Google Sheet Accounting Add-on
+                            </div>
                         </div>
-                    </div>
-                    <img class="projectPicture projectInfo" src="resources/decaRanker.png" alt="DECA Ranker Picture" title="DECA Ranker">
-                </a>
-            </div>
-            <div class="project">
-                <a href="portfolio.html#edmYT" class="noUnderline">
-                    <div class="projectHeading">
-                        <div class="projectHeadingText">
-                            EDM Promotion Music Channel
+                        <img class="projectPicture projectInfo" src="resources/acctgAddon.png" alt="Accounting Add-on Picture" title="Accounting Add-on">
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="portfolio.html#decaRank" class="noUnderline">
+                        <div class="projectHeading">
+                            <div class="projectHeadingText">
+                                DECA Ranker
+                            </div>
                         </div>
-                    </div>
-                    <img class="projectPicture projectInfo" src="resources/musicChannel.png" alt="Music Channel Picture" title="Music Channel">
-                </a>
+                        <img class="projectPicture projectInfo" src="resources/decaRanker.png" alt="DECA Ranker Picture" title="DECA Ranker">
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="portfolio.html#edmYT" class="noUnderline">
+                        <div class="projectHeading">
+                            <div class="projectHeadingText">
+                                EDM Promotion Music Channel
+                            </div>
+                        </div>
+                        <img class="projectPicture projectInfo" src="resources/musicChannel.png" alt="Music Channel Picture" title="Music Channel">
+                    </a>
+                </div>
             </div>
         </div>
         <div class="contact fixedSize"></div>
         <script>
-            window.onscroll = function() {scrollHeader(false)};
-            window.onclick = function() {scrollHeader(true)};
+            window.onscroll = () => scrollHeader(false);
+            window.onclick = () => scrollHeader(true);
             function scrollHeader(click) {
                 if (click || document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                     if(document.getElementById("scrollHeader").style.display == "none") {
                         return;
                     } else {
                         document.getElementById("scrollHeader").style.opacity = 0;
-                        window.setInterval(function(){document.getElementById("scrollHeader").style.display = "none";window.clearInterval(this)}, 2000)
+                        window.setInterval(() => {document.getElementById("scrollHeader").style.display = "none";window.clearInterval(this);}, 2000);
                         document.getElementById("clickMessage").style.display = "none";
                         document.getElementById("scrollHeader").style.height = "10vh";
                     }
                 }
             }
+            /*
             function goToProject(button) {
                 window.location.assign(button.parentElement.parentElement.firstElementChild.href);
-            }
+            }*/
         </script>
     </body>
 </html>

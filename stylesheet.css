@@ -4,14 +4,19 @@ body {
     text-align: center;
     height:auto;
     width:auto;
-    margin-top:80px;
-    margin-bottom:80px;
+    margin-top:40px;
+    margin-bottom:40px;
     margin-left:auto;
     margin-right:auto;
     padding:0;
     border:0;
     position:relative;
     font-family:"Trebuchet MS";
+}
+
+.bodyText {
+    margin-top:80px;
+    margin-bottom:80px;
 }
 
 div {
@@ -160,7 +165,7 @@ img {
 }
     
 .menuOption:hover{
-    background-color:grey;
+    background-color:#D4AD61;
 }
 
 .contactHeader{
@@ -181,6 +186,10 @@ img {
 .header{
     font-weight:bold;
     font-size:50px;
+}
+
+.sectionDivider {
+    height: 50px;
 }
 
 .autoMargin{

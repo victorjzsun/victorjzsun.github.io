@@ -13,23 +13,21 @@
     </div>
 </div>
 <div class="menuBrowser fixedSize">
-    <div class="menuPadding fixedSize">
-        <div class="menuTitle fixedSize">
-            Victor Sun
+    <div class="menuTitle fixedSize">
+        Victor Sun
+    </div>
+    <div class="menuPages fixedSize">
+        <div class="menuOption fixedSize">
+            <a href="index.html">Home</a>
         </div>
-        <div class="menuPages fixedSize">
-            <div class="menuOption fixedSize">
-                <a href="index.html">Home</a>
-            </div>
-            <div class="menuOption fixedSize">
-                <a href="portfolio.html">Portfolio</a>
-            </div>
-            <div class="menuOption fixedSize">
-                <a href="resume.html">Resume</a>
-            </div>
-            <div class="menuOption fixedSize">
-                <a href="experience.html">Experience</a>
-            </div>
+        <div class="menuOption fixedSize">
+            <a href="portfolio.html">Portfolio</a>
+        </div>
+        <div class="menuOption fixedSize">
+            <a href="resume.html">Resume</a>
+        </div>
+        <div class="menuOption fixedSize">
+            <a href="experience.html">Experience</a>
         </div>
     </div>
 </div>
