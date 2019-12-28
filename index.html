@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="intro">
-            <div class="introBB">
+            <div class="autoMargin">
                 <div class="profile">
                     <img src="resources/profile.jpg" class="profilePicture">
                 </div>
@@ -40,7 +40,7 @@
                 <div class="welcome">
                     <h3>Welcome to my site</h3>
                     <p>I'm a second year Computer Science student at the University of Waterloo.</p>
-                    <p>Currently looking for a co-op placement from May to August 2019</p>
+                    <p>Currently looking for a co-op placement from May to August 2020</p>
                     <p>Feel free to browse through the menu links</p>
                     <p>If you have any questions, please contact me <a href="mailto:victorjsun@gmail.com">here</a></p>
                 </div>
@@ -52,36 +52,33 @@
             </div>
             <div class="project">
                 <a href="portfolio.html#gsAcctg" class="noUnderline">
-                    <img src="resources/acctgAddon.png" alt="Accounting Add-on Picture" title="Accounting Add-on" class="projectPicture">
+                    <div class="projectHeading">
+                        <div class="projectHeadingText">
+                            Google Sheet Accounting Add-on
+                        </div>
+                    </div>
+                    <img class="projectPicture projectInfo" src="resources/acctgAddon.png" alt="Accounting Add-on Picture" title="Accounting Add-on">
                 </a>
-                <div class="introPadding"></div>
-                <div class="projectInfo">
-                    <button onclick="goToProject(this)">
-                        Google Sheet Accounting Add-on
-                    </button>
-                </div>
             </div>
             <div class="project">
                 <a href="portfolio.html#decaRank" class="noUnderline">
-                    <img src="resources/decaRanker.png" alt="DECA Ranker Picture" title="DECA Ranker" class="projectPicture">
+                    <div class="projectHeading">
+                        <div class="projectHeadingText">
+                            DECA Ranker
+                        </div>
+                    </div>
+                    <img class="projectPicture projectInfo" src="resources/decaRanker.png" alt="DECA Ranker Picture" title="DECA Ranker">
                 </a>
-                <div class="introPadding"></div>
-                <div class="projectInfo">
-                    <button onclick="goToProject(this)">
-                        DECA Ranker
-                    </button>
-                </div>
             </div>
             <div class="project">
                 <a href="portfolio.html#edmYT" class="noUnderline">
-                    <img src="resources/musicChannel.png" alt="Music Channel Picture" title="Music Channel" class="projectPicture">
+                    <div class="projectHeading">
+                        <div class="projectHeadingText">
+                            EDM Promotion Music Channel
+                        </div>
+                    </div>
+                    <img class="projectPicture projectInfo" src="resources/musicChannel.png" alt="Music Channel Picture" title="Music Channel">
                 </a>
-                <div class="introPadding"></div>
-                <div class="projectInfo">
-                    <button onclick="goToProject(this)">
-                        EDM Promotion Music Channel
-                    </button>
-                </div>
             </div>
         </div>
         <div class="contact fixedSize"></div>
@@ -90,16 +87,13 @@
             window.onclick = function() {scrollHeader(true)};
             function scrollHeader(click) {
                 if (click || document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                    if(document.getElementById("headerBackground").style.display == "none") {
+                    if(document.getElementById("scrollHeader").style.display == "none") {
                         return;
                     } else {
-                        document.getElementById("headerBackground").style.opacity = 0;
-                        document.getElementById("scrollHeaderMessage").style.top = "50%";
-                        document.getElementById("scrollHeaderMessage").style.color = "black";
-                        window.setInterval(function(){document.getElementById("headerBackground").style.display = "none";window.clearInterval(this)}, 2000)
+                        document.getElementById("scrollHeader").style.opacity = 0;
+                        window.setInterval(function(){document.getElementById("scrollHeader").style.display = "none";window.clearInterval(this)}, 2000)
                         document.getElementById("clickMessage").style.display = "none";
                         document.getElementById("scrollHeader").style.height = "10vh";
-                        window.scrollTo(0,80);
                     }
                 }
             }
