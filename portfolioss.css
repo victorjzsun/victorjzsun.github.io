@@ -1,48 +1,30 @@
 .projects{
-    margin-bottom:40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align:center;
-    padding-bottom:40px;
 }
 
-.projectPicture{
+.project {
+    margin: 50px;
+}
+
+.projectPicture {
     width:450px;
+    height: 320px;
 }
 
-.projectInfo{
+.projectInfo {
+    text-align: left;
+    width: 500px;
     display:inline-block;
-    padding-top:10px;
+    vertical-align: middle;
 }
 
-@media only screen and (max-width: 955px) {
-    .projectHeadingMob {
-        font-size:20px;
-        text-decoration:underline;
-        padding-bottom:20px;
-    }
-    
-    .projectHeading {
-        display:none;
-    }
-}
-
-@media only screen and (min-width: 955px) {
-    .projectHeadingMob {
-        display:none;
-    }
-    
-    .projectHeading {
-        font-size:20px;
-        text-decoration:underline;
-    }
-}
-
-.projectDesc {
-    text-align:left;
-    width:500px;
-}
-
-.sectionPadding{
-    height:50px;
+.projectHeading {
+    font-size:20px;
+    text-decoration:underline;
+    padding-top:20px;
+    padding-bottom:20px;
 }
 
 li{
