@@ -1,11 +1,10 @@
 .projects{
-    margin-top: 50px;
-    margin-bottom: 50px;
     text-align:center;
 }
 
 .project {
-    margin: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .projectPicture {
