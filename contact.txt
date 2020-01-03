@@ -10,14 +10,14 @@
     }
 })()'>
     <div class="contactHeader fixedSize">
-        Contact<div class="colon">:</div>
+        Contact <div class="contactBrowserExtra">me at:</div>
     </div>
     <div class="contactOptions fixedSize">
         <div class="contactOption fixedSize">
-            Email: victorjsun@gmail.com
+            victorjsun@gmail.com
         </div>
         <div class="contactOption fixedSize">
-            Phone: (416) 527-7877
+            (416) 527-7877
         </div>
     </div>
 </div>
