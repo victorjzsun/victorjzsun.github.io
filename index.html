@@ -87,9 +87,9 @@
         <div class="contact fixedSize"></div>
         <script>
             window.onscroll = () => scrollHeader(false);
-            window.onclick = () => scrollHeader(true);
+            window.onclick = (e) => scrollHeader(e);
             function scrollHeader(click) {
-                if (click || document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                if ((click && $(click.target).offset().left == 0 && $(click.target).offset().top == 0) || document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                     if(document.getElementById("scrollHeader").style.display == "none") {
                         return;
                     } else {
