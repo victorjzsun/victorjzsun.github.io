@@ -1,24 +1,14 @@
+.experiences{
+    text-align:center;
+}
+
 .experience{
-    padding-top:20px;
-    padding-bottom:20px;
-}
-
-.bulletB {
-    width:20px;
-    padding:10px;
-    display:none;
-    vertical-align:middle;
-}
-
-.bullet{
-    width:10px;
-    height:2px;
-    background-color:black;
-    margin-left:auto;
-    margin-right:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .expHeader{
+    height: 45px;
     display:inline-block;
     width:100%;
 }
@@ -35,13 +25,8 @@
     }
     
     .expLocation {
-        text-align:left;
         color:#555555;
         text-align:left;
-    }
-    
-    div:not(.fixedSize):not(.menu){
-        width:90vw;
     }
 }
 
@@ -53,11 +38,13 @@
 
     .expDate{
         font-size:20px;
+        line-height: 25px;
         text-align:right;
     }
     
     .expLocation {
-        text-align:left;
+        font-size: 15px;
+        line-height: 20px;
         color:#555555;
         text-align:right;
     }
@@ -71,6 +58,7 @@
 
 .expTitle {
     font-size:30px;
+    line-height: 45px;
     text-align:left;
     display:inline-block;
     width:50%;
