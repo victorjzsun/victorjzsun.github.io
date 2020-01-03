@@ -4,10 +4,7 @@ body {
     text-align: center;
     height:auto;
     width:auto;
-    margin-top:40px;
-    margin-bottom:40px;
-    margin-left:auto;
-    margin-right:auto;
+    margin: 40px auto 40px auto;
     padding:0;
     border:0;
     position:relative;
@@ -15,8 +12,8 @@ body {
 }
 
 .bodyText {
-    margin-top:80px;
-    margin-bottom:80px;
+    padding-top:40px;
+    padding-bottom:40px;
 }
 
 div {
@@ -26,6 +23,10 @@ div {
 
 img {
     vertical-align:middle;
+}
+
+a {
+    color: inherit;
 }
 
 .menu{
@@ -51,14 +52,15 @@ img {
     .menuMobIcon{
         height:40px;
         width:40px;
-        padding:0px;
+        padding-left: 5px;
         display:inline-block;
     }
     
     .menuMobTitle{
         width:100px;
         height:40px;
-        font-size:34px;
+        line-height: 40px;
+        font-size:30px;
         display:inline-block;
         vertical-align:middle;
     }
@@ -77,10 +79,14 @@ img {
     }
     
     .menuOption{
+        display: table-row;
+    }
+    
+    .menuOptionInner {
+        width: calc(100vw - 20px);
+        padding:0px 10px 0px 10px;
+        display: table-cell;
         line-height:30px;
-        margin-right:0px;
-        margin-left:0px;
-        padding:0px 5px 0px 5px;
         font-size:18px;
         vertical-align:middle;
     }
@@ -104,7 +110,7 @@ img {
         margin:0px 10px 0px 10px;
     }
     
-    .colon{
+    .contactBrowserExtra{
         display:none;
     }
 }
@@ -123,7 +129,7 @@ img {
         left: 4%;
         height:100%;
         font-size:30px;
-        line-height:41px;
+        line-height:40px;
         display:inline-block;
         vertical-align:middle;
         text-align:left;
@@ -132,18 +138,23 @@ img {
     .menuPages{
         position: absolute;
         right: 4%;
-        display:inline-block;
+        display:inline-table !important;
         vertical-align:middle;
         text-align:right;
-        line-height:40px;
+        height: 40px;
+    }
+    
+    .menuPagesInner{
+        display:table-row;
+        vertical-align:middle;
+        text-align:right;
+        height: 40px;
     }
     
     .menuOption{
-        height:40px;
-        margin-right:0px;
-        margin-left:0px;
-        padding:0px 6px 0px 6px;
-        display:inline-block;
+        padding-left: 6px;
+        padding-right: 6px;
+        display:table-cell;
         font-size:18px;
         vertical-align:middle;
     }
@@ -159,7 +170,7 @@ img {
         margin:0px 10px 0px 10px;
     }
     
-    .colon{
+    .contactBrowserExtra{
         display:inline-block;
     }
 }
