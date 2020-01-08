@@ -4,6 +4,11 @@ iframe{
     border: none;
 }
 
+.resume {
+    width:100%;
+    height:calc(100vh - 80px);
+}
+
 .noiframe{
     line-height:100px;
     font-size:50px;
