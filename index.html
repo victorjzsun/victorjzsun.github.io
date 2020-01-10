@@ -7,7 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="resources/profile.jpg">
         <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet/less" href="linesss.less">
         <link rel="stylesheet" href="indexss.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             window.onload = function(){
@@ -20,13 +22,6 @@
     </head>
     <body>
         <div class="menu fixedSize"></div>
-        <div class="lines">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
         <div class="bodyText">
             <div class="headingSection fixedSize" id="scrollHeader">
                 <div class="bgImage fixedSize" id="headerBackground"></div>
@@ -49,7 +44,6 @@
                         <h3>Welcome to my site</h3>
                         <p>I'm a second year Computer Science student at the University of Waterloo.</p>
                         <p>Currently looking for a co-op placement from May to August 2020</p>
-                        <p>Feel free to browse through the menu links</p>
                         <p>If you have any questions, please contact me <a href="mailto:victorjsun@gmail.com">here</a></p>
                     </div>
                 </div>
@@ -96,7 +90,10 @@
             window.onscroll = () => scrollHeader(false);
             window.onclick = (e) => scrollHeader(e);
             function scrollHeader(click) {
-                if ((click && $(click.target).offset().left == 0 && $(click.target).offset().top == 0) || document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                var clickedIn = click && (($(click.target).offset().left == 0 && $(click.target).offset().top == 0) || 
+                                ($(click.target).offset().left == $('#scrollHeaderMessage').offset().left && 
+                                    $(click.target).offset().top == $('#scrollHeaderMessage').offset().top));
+                if (clickedIn || document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                     if(document.getElementById("scrollHeader").style.display == "none") {
                         return;
                     } else {
@@ -112,5 +109,7 @@
                 window.location.assign(button.parentElement.parentElement.firstElementChild.href);
             }*/
         </script>
+        <div class="lines fixedSize"><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div></div>
+        <div class="lines2 fixedSize"><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div></div>
     </body>
 </html>

@@ -1,0 +1,80 @@
+.lines {
+    padding: 0;
+    box-sizing: border-box !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.lines2 {
+    padding: 0;
+    box-sizing: border-box !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.lines .line{
+    transform: skew(45deg);
+}
+
+.lines2 .line{
+    transform: skew(-45deg);
+}
+.line {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.01);
+    overflow: hidden;
+    transform-origin: center;
+    
+    &::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box !important;
+        content: '';
+        display: block;
+        position: absolute;
+        height: 15vh;
+        width: 10px;
+        top: -50%;
+        left: 0;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0.5) 100%);
+        animation: run 15s 0s infinite;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    }
+}
+
+.loop(@n, @i: 1) when(@i =< @n){
+    .line:nth-child(@{i}) {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box !important;
+        margin-left: calc((@i)*150px - 2000px);
+        &::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box !important;
+            animation-delay: calc(@i*@i*@i*-0.2s);
+        }
+    }
+    .loop(@n, (@i + 1));
+}
+.loop(20);
