@@ -9,7 +9,7 @@
         <img width=40px title="Menu" src="resources/menuIcon.png" class="fixedSize">
     </div>
     <div class="menuMobTitle fixedSize">
-        Menu
+        Victor Sun
     </div>
 </div>
 <div class="menuBrowser fixedSize">
@@ -21,24 +21,32 @@
     <div class="menuPages fixedSize">
         <div class="menuPagesInner fixedSize">
             <div class="menuOption fixedSize">
-                <div class="menuOptionInner fixedSize">
-                    <a href="index.html">Home</a>
-                </div>
+                <a href="index.html">
+                    <div class="menuOptionInner fixedSize">
+                        Home
+                    </div>
+                </a>
             </div>
             <div class="menuOption fixedSize">
-                <div class="menuOptionInner fixedSize">
-                    <a href="portfolio.html">Portfolio</a>
-                </div>
+                <a href="portfolio.html">
+                    <div class="menuOptionInner fixedSize">
+                        Portfolio
+                    </div>
+                </a>
             </div>
             <div class="menuOption fixedSize">
-                <div class="menuOptionInner fixedSize">
-                    <a href="resume.html">Resume</a>
-                </div>
+                <a href="resume.html">
+                    <div class="menuOptionInner fixedSize">
+                        Resume
+                    </div>
+                </a>
             </div>
             <div class="menuOption fixedSize">
-                <div class="menuOptionInner fixedSize">
-                    <a href="experience.html">Experience</a>
-                </div>
+                <a href="experience.html">
+                    <div class="menuOptionInner fixedSize">
+                        Experience
+                    </div>
+                </a>
             </div>
         </div>
     </div>
