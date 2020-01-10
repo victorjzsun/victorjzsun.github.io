@@ -88,7 +88,7 @@ a {
     .menuPages{
         margin:0px;
         vertical-align:middle;
-        background-color:#ffcc66;
+        background-color:#76B5C8;
         text-align:left;
         width: 100vw;
         display:none;
@@ -194,7 +194,7 @@ a {
 }
     
 .menuOption:hover{
-    background-color:#D4AD61;
+    background-color:#418da4;
 }
 
 .contactHeader{
