@@ -20,34 +20,34 @@
     </a>
     <div class="menuPages fixedSize">
         <div class="menuPagesInner fixedSize">
-            <div class="menuOption fixedSize">
-                <a href="index.html">
+            <a href="index.html" class="menuOptionLink">
+                <div class="menuOption fixedSize">
                     <div class="menuOptionInner fixedSize">
                         Home
                     </div>
-                </a>
-            </div>
-            <div class="menuOption fixedSize">
-                <a href="portfolio.html">
+                </div>
+            </a>
+            <a href="portfolio.html" class="menuOptionLink">
+                <div class="menuOption fixedSize">
                     <div class="menuOptionInner fixedSize">
                         Portfolio
                     </div>
-                </a>
-            </div>
-            <div class="menuOption fixedSize">
-                <a href="resume.html">
+                </div>
+            </a>
+            <a href="resume.html" class="menuOptionLink">
+                <div class="menuOption fixedSize">
                     <div class="menuOptionInner fixedSize">
                         Resume
                     </div>
-                </a>
-            </div>
-            <div class="menuOption fixedSize">
-                <a href="experience.html">
+                </div>
+            </a>
+            <a href="experience.html" class="menuOptionLink">
+                <div class="menuOption fixedSize">
                     <div class="menuOptionInner fixedSize">
                         Experience
                     </div>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
     </div>
 </div>
