@@ -16,7 +16,6 @@
 @media only screen and (max-width: 730px) {
     .expDetails{
         display:block;
-        width:49%;
     }
     
     .expDate{
@@ -25,8 +24,12 @@
     }
     
     .expLocation {
-        color:#555555;
+        color:#cccccc;
         text-align:left;
+    }
+
+    div:not(.fixedSize):not(.menu):not(.line) {
+        width:90vw;
     }
 }
 
@@ -45,8 +48,12 @@
     .expLocation {
         font-size: 15px;
         line-height: 20px;
-        color:#555555;
+        color:#cccccc;
         text-align:right;
+    }
+    
+    .expTitle {
+        width:50%;
     }
 }
 
@@ -61,7 +68,6 @@
     line-height: 45px;
     text-align:left;
     display:inline-block;
-    width:50%;
 }
 
 .expDesc{
