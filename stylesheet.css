@@ -6,7 +6,7 @@ body {
     display: table;
     height:auto;
     width:100%;
-    margin: 40px 0px 40px 0px;
+    margin: 40px 0px 0px 0px;
     background-color: #333333;
     color: #FFF;
     position: relative;
@@ -48,7 +48,7 @@ a {
 .menu{
     height:40px;
     margin:auto;
-    width:100%;
+    width:100vw;
     padding-left:0%;
     padding-right:0%;
     position:fixed;
@@ -95,7 +95,6 @@ a {
     }
     
     .menuOption{
-        display: table-row;
         width: 100%;
     }
     
@@ -103,7 +102,6 @@ a {
         width: calc(100vw - 20px);
         border-top: 1px solid grey;
         padding:0px 10px 0px 10px;
-        display: table-cell;
         line-height:49px;
         font-size:18px;
         vertical-align:middle;
@@ -146,7 +144,7 @@ a {
         position: absolute;
         left: 4%;
         height:100%;
-        font-size:30px;
+        font-size:28px;
         line-height:40px;
         display:inline-block;
         vertical-align:middle;
@@ -177,6 +175,11 @@ a {
         vertical-align:middle;
     }
 
+    .menuOptionLink {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
     .contactOptions{
         display:inline-block;
     }
@@ -193,8 +196,9 @@ a {
     }
 }
     
-.menuOption:hover{
-    background-color:#418da4;
+.menuOptionLink:hover{
+    text-decoration: underline;
+    /*background-color:#418da4;*/
 }
 
 .contactHeader{
