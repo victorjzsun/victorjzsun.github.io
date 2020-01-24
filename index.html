@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="stylesheet/less" href="linesss.less">
         <link rel="stylesheet" href="indexss.css">
+        <link rel="preload" as="image" href="resources/headerBackground.jpg" 
         <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
@@ -43,6 +44,7 @@
                         <h3>Welcome to my site</h3>
                         <p>I'm a second year Computer Science student at the University of Waterloo.</p>
                         <p>Currently looking for a co-op placement from May to August 2020</p>
+                        <p>Note: This website was created from scratch, simple enough to not require a web framework</p>
                         <p>If you have any questions, please contact me <a href="mailto:victorjsun@gmail.com"><u>here</u></a></p>
                     </div>
                 </div>
@@ -53,23 +55,13 @@
                     Current Projects
                 </div>
                 <div class="project">
-                    <a href="portfolio.html#gsAcctg" class="noUnderline">
+                    <a href="portfolio.html#autosubpl" class="noUnderline">
                         <div class="projectHeading">
                             <div class="projectHeadingText">
-                                Google Sheet Accounting Add-on
+                                Auto Subscription Playlist
                             </div>
                         </div>
-                        <img class="projectPicture projectInfo" src="resources/acctgAddon.png" alt="Accounting Add-on Picture" title="Accounting Add-on">
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="portfolio.html#decaRank" class="noUnderline">
-                        <div class="projectHeading">
-                            <div class="projectHeadingText">
-                                DECA Ranker
-                            </div>
-                        </div>
-                        <img class="projectPicture projectInfo" src="resources/decaRanker.png" alt="DECA Ranker Picture" title="DECA Ranker">
+                        <img class="projectPicture projectInfo" src="resources/autoSubPlaylist.png" alt="Playlist Picture" title="Auto Subscription Playlist">
                     </a>
                 </div>
                 <div class="project">
@@ -97,9 +89,8 @@
                         return;
                     } else {
                         document.getElementById("scrollHeader").style.opacity = 0;
-                        window.setInterval(() => {document.getElementById("scrollHeader").style.display = "none";window.clearInterval(this);}, 2000);
+                        var int1 = window.setInterval(() => {document.getElementById("scrollHeader").style.display = "none";window.clearInterval(int1);}, 1000);
                         document.getElementById("clickMessage").style.display = "none";
-                        document.getElementById("scrollHeader").style.height = "10vh";
                     }
                 }
             }
