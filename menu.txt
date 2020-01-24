@@ -1,10 +1,4 @@
-<div class="menuMobile fixedSize" onclick='(function(){
-    if($(".menuPages").css("display") == "none"){
-        $(".menuPages").css("display", "table")
-    } else {
-        $(".menuPages").css("display", "none")
-    }
-})()'>
+<div class="menuMobile fixedSize" id="menuMob">
     <div class="menuMobIcon fixedSize">
         <img width=40px title="Menu" src="resources/menuIcon.png" class="fixedSize">
     </div>
@@ -12,6 +6,19 @@
         Victor Sun
     </div>
 </div>
+<script>
+document.getElementById("menuMob").onclick=function(){
+    $(".menuPages").css("transition", "1s");
+    if($(".menuPages").css("display") == "none"){
+        $(".menuPages").css("display", "table")
+        var int1 = window.setInterval(() => {$(".menuPages").css("opacity", 1);window.clearInterval(int1);}, 1)
+    } else {
+        $(".menuPages").css("opacity", 0)
+        var int1 = window.setInterval(() => {$(".menuPages").css("display", "none");window.clearInterval(int1);}, 1000)
+    }
+    var int2 = window.setInterval(() => {$(".menuPages").css("transition", "0s");window.clearInterval(int2);}, 1000)
+}
+</script>
 <div class="menuBrowser fixedSize">
     <a href="index.html">
     <div class="menuTitle fixedSize">
