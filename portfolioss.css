@@ -9,7 +9,7 @@
 
 .projectPicture {
     width:450px;
-    height: 320px;
+    height: 360px;
 }
 
 .projectInfo {
@@ -27,6 +27,8 @@
 }
 
 li{
+    margin-top: 1em;
+    margin-bottom: 1em;
     font-size:20px;
 }
 /*

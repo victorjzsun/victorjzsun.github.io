@@ -20,6 +20,28 @@
             </div>
             <div class="projects">
                 <div class="project">
+                    <div class="projectHeading" id="autosubpl">
+                        Auto Subscription Playlist
+                    </div>
+                    <img src="resources/autoSubPlaylist.png" alt="Playlist Picture" title="Auto Subscription Playlist" class="projectPicture">
+                    <div class="projectInfo">
+                        <ul>
+                            <li>
+                                <b>Google Apps Script</b> that takes a list of channels and adds all recently posted videos to a playlist
+                            </li>
+                            <li>
+                                Collaborator of open-source project of GitHub
+                            </li>
+                            <li>
+                                Looking for more colaborators!
+                            </li>
+                            <li>
+                                Come see for yourself <a href="https://github.com/Elijas/auto-youtube-subscription-playlist-2">here</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project">
                     <div class="projectHeading" id="gsAcctg">
                         Google Sheet Accounting Add-on
                     </div>
@@ -81,6 +103,13 @@
                 </div>
             </div>
         </div>
-        <div class="contact fixedSize"></div>
+        <script>
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+        window.setTimeout(offsetAnchor, 1);
+        </script>
     </body>
 </html>
