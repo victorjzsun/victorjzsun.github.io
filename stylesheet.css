@@ -113,7 +113,7 @@ a {
     }
     
     div:not(.fixedSize):not(.menu):not(.line) {
-        width:90vw;
+        width:85vw;
     }
     
     .contactOptions{
